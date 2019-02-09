@@ -27,10 +27,7 @@ echo -e ">> Removing compiler flags not supported by Pi"
 sed -i 's/-m32//g' psp/fsw/pc-linux/make/link-rules.mak psp/fsw/pc-linux/make/compiler-opts.mak tools/elf2cfetbl/for_build/Makefile
 sed -i 's/-melf_i386//g' psp/fsw/pc-linux/make/compiler-opts.mak
 
-## Correctly set the LINKER makefile variable
-#echo "---- Updating LINKER variable ----"
-#echo -e "LINKER = ld\n$(cat cfe/fsw/cfe-core/src/make/make-rules.mak)" > cfe/fsw/cfe-core/src/make/make-rules.mak
-
+## Clean & Build cFS
 echo -e ">> Building cFS"
 source setvars.sh
 cd build/cpu1
