@@ -9,5 +9,6 @@ $ source install-cfs-rpi.sh
 ## Running cFS
 After running the above installation command, run cFS using:
 ```shell
-$ sudo ./cFE/build/cpu1/exe/core-linux.bin
+$ cd cFE/build/cpu1/exe
+$ sudo ./core-linux.bin
 ```
